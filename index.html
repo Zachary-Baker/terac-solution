@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terac Autonomous Research Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Terac is an AI-native autonomous research platform built on Google Cloud for automated interviews, analysis, and insight generation."
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+      color: #111827;
+      background: #f3f4f6;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: radial-gradient(circle at top left, #1d4ed8, #111827);
+      color: #f9fafb;
+      padding: 40px 20px 60px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(15, 23, 42, 0.6);
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .badge span {
+      opacity: 0.9;
+    }
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    .subtitle {
+      max-width: 640px;
+      font-size: 15px;
+      opacity: 0.95;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .pill {
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid rgba(249, 250, 251, 0.3);
+      font-size: 11px;
+      opacity: 0.9;
+    }
+    main {
+      margin-top: -40px;
+      padding-bottom: 48px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+      padding: 24px 24px 32px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+      margin-top: 16px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .stat {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      font-size: 13px;
+    }
+    .stat-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    .stat-value {
+      font-weight: 600;
+      color: #111827;
+    }
+    .footer-note {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 16px;
+    }
+    @media (max-width: 640px) {
+      header {
+        padding: 28px 16px 50px;
+      }
+      .title {
+        font-size: 26px;
+      }
+      .card {
+        padding: 18px 16px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="badge">
+        <span>Built on Google Cloud · Solution Qualification Overview</span>
+      </div>
+      <h1 class="title">Terac Autonomous Research Platform</h1>
+      <p class="subtitle">
+        Terac is an AI-native autonomous research platform built on Google Cloud
+        that automates participant sourcing, interviewing, transcription,
+        analysis, and insight generation for product and user research teams.
+      </p>
+      <div class="pill-row">
+        <div class="pill">Google Cloud Run · Firestore · Cloud Storage</div>
+        <div class="pill">BigQuery analytics</div>
+        <div class="pill">Identity Platform security</div>
+        <div class="pill">AI-driven insights</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="card">
+        <h2>Solution Overview</h2>
+        <p>
+          Terac orchestrates the end-to-end research workflow on Google Cloud:
+          it sources participants, schedules and runs voice, video and text
+          interviews, generates high-quality transcripts, and applies AI models
+          to surface patterns, themes and actionable insights. Product teams use
+          Terac to continuously run discovery and usability studies at scale
+          while keeping research data in a governed, queryable environment.
+        </p>
+
+        <div class="grid">
+          <div class="stat">
+            <div class="stat-title">Primary use case</div>
+            <div class="stat-value">
+              Product &amp; UX research automation on Google Cloud
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-title">Deployment model</div>
+            <div class="stat-value">Multi-tenant SaaS, Google Cloud region-based</div>
+          </div>
+          <div class="stat">
+            <div class="stat-title">Integration</div>
+            <div class="stat-value">Connects to existing product analytics &amp; CRMs</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>How Terac Uses Google Cloud</h2>
+
+        <h3>Core services</h3>
+        <ul>
+          <li>
+            <strong>Cloud Run</strong> runs stateless microservices that manage
+            interview sessions, real-time transcription pipelines, scheduling
+            logic and webhooks.
+          </li>
+          <li>
+            <strong>Cloud Storage</strong> stores raw and processed media
+            assets, transcripts, highlight clips and export bundles with
+            lifecycle policies.
+          </li>
+          <li>
+            <strong>Firestore</strong> maintains participant profiles, consent
+            records, project configurations and real-time session state.
+          </li>
+          <li>
+            <strong>BigQuery</strong> aggregates transcripts, behavioral
+            signals, tags and derived insights into fast, queryable datasets for
+            analysis and reporting.
+          </li>
+          <li>
+            <strong>Identity Platform</strong> provides secure authentication,
+            multi-tenant access control and SSO integration for research teams
+            and stakeholders.
+          </li>
+        </ul>
+
+        <h3>Typical data &amp; processing flow</h3>
+        <ul>
+          <li>
+            Researchers configure a study and target audience in the Terac UI.
+          </li>
+          <li>
+            Participants are invited and join browser-based or mobile
+            interviews; media streams are processed by Cloud Run services.
+          </li>
+          <li>
+            Media and transcripts are stored in Cloud Storage, while metadata
+            and events are written to Firestore.
+          </li>
+          <li>
+            Batch and near-real-time pipelines load structured data into
+            BigQuery for exploration, dashboards and downstream models.
+          </li>
+          <li>
+            Identity Platform enforces secure sign-in, role-based permissions
+            and project-level isolation.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Security, Compliance and Operations</h2>
+        <ul>
+          <li>
+            All data is stored on Google Cloud with encryption at rest and in
+            transit using Google-managed keys.
+          </li>
+          <li>
+            Access to projects and workspaces is governed by role-based access
+            control through Identity Platform and application-level policies.
+          </li>
+          <li>
+            Separate projects and datasets can be used per customer or region to
+            support data residency and per-tenant governance.
+          </li>
+          <li>
+            Logging and audit trails are integrated with Google Cloud logging
+            services for operational monitoring and incident response.
+          </li>
+        </ul>
+        <p class="footer-note">
+          This page provides a public, high-level description of the Terac
+          Autonomous Research Platform and its use of Google Cloud services for
+          the purposes of Google Cloud partner solution qualification.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
